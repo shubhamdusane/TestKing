@@ -1,0 +1,22 @@
+:root{
+    --backgroundColor: #FFFFFF;
+    --color: #1C1C1E;
+    --primaryColor: #F85E11;
+    --backgroundColorDashboard: #F5F6FA;
+    --backgroundColor-lightgrey: #FFFFFF;
+    --backgroundColor-lightgrey1: #F5F6FA;
+    --backgroundColor-lightgrey2: #F5F6FA;
+    --backgroundColor-black: #FFFFFF;
+    --backgroundColor-lightblack: #FFFFFF;
+  }
+  
+  .dark{
+    --backgroundColor: #1C1C1E;
+    --color: #FFFFFF;
+    --backgroundColorDashboard: #242426;
+    --backgroundColor-lightgrey: #3A3A3C;
+    --backgroundColor-lightgrey1: #3A3A3C;
+    --backgroundColor-lightgrey2: #F5F6FA;
+    --backgroundColor-black: #242426;
+    --backgroundColor-lightblack: #2E2E2E;
+  }

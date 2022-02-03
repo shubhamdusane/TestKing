@@ -1,0 +1,380 @@
+
+			{/* Division 2 starts */}
+			<div className='division-2 pb-5 mb-5'>
+				<div className='main-title d-flex justify-content-center align-items-center'>
+					<p className='orange-color'>USDAO</p>
+					<p>QUICK</p>
+				</div>
+				<div className='card-content px-5 pt-5'>
+					<div className='d-flex justify-content-between align-items-center'>
+						<div className='card-design'>
+							<p>Market Price</p>
+							<p className='bold-font-value'>$ 0.0000</p>
+						</div>
+						<div className='card-design'>
+							<p>Market Price</p>
+							<p className='bold-font-value'>$ 0.0000</p>
+						</div>
+						<div className='card-design'>
+							<p>Market Price</p>
+							<p className='bold-font-value'>$ 0.0000</p>
+						</div>
+						<div className='card-design'>
+							<p>Market Price</p>
+							<p className='bold-font-value'>$ 0.0000</p>
+						</div>
+					</div>
+				</div>
+
+				<div className='card-content px-5 pt-5'>
+					<div className='d-flex justify-content-between align-items-center'>
+						<div className='card-design'>
+							<p>Market Price</p>
+							<p className='bold-font-value'>$ 0.0000</p>
+						</div>
+						<div className='card-design'>
+							<p>Market Price</p>
+							<p className='bold-font-value'>$ 0.0000</p>
+						</div>
+						<div className='card-design'>
+							<p>Market Price</p>
+							<p className='bold-font-value'>$ 0.0000</p>
+						</div>
+						<div className='card-design'>
+							<p>Market Price</p>
+							<p className='bold-font-value'>$ 0.0000</p>
+						</div>
+					</div>
+				</div>
+
+				<div className='calculation-area px-5 pt-5 mt-5 d-flex justify-content-between align-items-center'>
+					<div className='calculation-card'>
+						<div className='row text-center'>
+							<div className='col'>
+								<p>USDAO</p>
+							</div>
+						</div>
+						<div className='buy-sell-part row my-4'>
+							<div className='col-md-6 text-center buy-sell-orange pointer'>
+								BUY
+							</div>
+							<div className='col-md-6 text-center pointer buy-sell-white'>
+								SELL
+							</div>
+						</div>
+						<div className='input-content d-flex justify-content-center align-items-center'>
+							<input placeholder='' />
+							<button className='linear-button-1'>MAX</button>
+							<button className='linear-button-orange'>ETH</button>
+						</div>
+						<div className='input-content d-flex justify-content-center align-items-center'>
+							<input placeholder='' />
+							<button className='linear-button-1'>MAX</button>
+							<button className='linear-button-orange'>ETH</button>
+						</div>
+						<div className='button-content d-flex justify-content-center align-items-center'>
+							<button
+								style={{ backgroundColor: '#1F1C2B', padding: '0.5rem 3rem' }}
+								className='linear-button'
+							>
+								BUY
+							</button>
+						</div>
+					</div>
+
+					{/* Asset card buy /sell part */}
+
+					<div className='calculation-card'>
+						<div className='row text-center'>
+							<div className='col'>
+								<p>ASSET</p>
+							</div>
+						</div>
+						<div className='buy-sell-part row my-4'>
+							<div className='col-md-6 text-center buy-sell-orange pointer'>
+								BUY
+							</div>
+							<div className='col-md-6 text-center pointer buy-sell-white'>
+								SELL
+							</div>
+						</div>
+						<div className='input-content d-flex justify-content-center align-items-center'>
+							<input placeholder='' />
+							<button className='linear-button-1'>MAX</button>
+							<button className='linear-button-orange'>ETH</button>
+						</div>
+						<div className='input-content d-flex justify-content-center align-items-center'>
+							<input placeholder='' />
+							<button className='linear-button-1'>MAX</button>
+							<button className='linear-button-orange'>ETH</button>
+						</div>
+						<div className='button-content d-flex justify-content-center align-items-center'>
+							<button
+								style={{ backgroundColor: '#1F1C2B', padding: '0.5rem 3rem' }}
+								className='linear-button'
+							>
+								BUY
+							</button>
+						</div>
+					</div>
+
+					{/* Sel/buy usdao 3rd part */}
+
+					<div className='calculation-card'>
+						<div className='row text-center'>
+							<div className='col'>
+								<p>SEND</p>
+							</div>
+						</div>
+						<div className='buy-sell-part row my-4'>
+							<div className='col-md-6 text-center buy-sell-orange pointer'>
+								BUY
+							</div>
+							<div className='col-md-6 text-center pointer buy-sell-white'>
+								SELL
+							</div>
+						</div>
+						<div className='input-content d-flex justify-content-center align-items-center'>
+							<input placeholder='' />
+							<button className='linear-button-1'>MAX</button>
+							<button className='linear-button-orange'>ETH</button>
+						</div>
+						<div className='input-content d-flex justify-content-center align-items-center'>
+							<input placeholder='' />
+							<button className='linear-button-1'>MAX</button>
+							<button className='linear-button-orange'>ETH</button>
+						</div>
+						<div className='button-content d-flex justify-content-center align-items-center'>
+							<button
+								style={{ backgroundColor: '#1F1C2B', padding: '0.5rem 3rem' }}
+								className='linear-button'
+							>
+								BUY
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			{/* Division 2 ends */}
+
+			{/* Division 3 starts */}
+			<div className='division-3'>
+				<div className='row px-5'>
+					<div className='col-md-6 m-auto'>
+						<p className='big-font-1 orange-color'>WHY USDAO</p>
+						<p className='big-font-1'>SPEED, SCALABLE, SECURED</p>
+						<p className='caption-content'>
+							The USDAO Protocol provides a highly scalable and decentralized
+							stable currency with lower transaction fees. USDAO is a
+							crypto-backed digital stablecoin intended to serve as a global
+							currency.
+						</p>
+					</div>
+					<div className='col-md-6 text-center'>
+						<img
+							src={require('../../assets/images/home-big-image.svg')}
+							style={{ minHeight: '30rem' }}
+							alt=''
+						/>
+					</div>
+				</div>
+			</div>
+			{/* Division 3 ends */}
+
+			{/* Divison 4 starts */}
+			<div className='division-4'>
+				<div className='row px-5'>
+					<div className='col accesible-card'>
+						<div className='d-flex'>
+							<p className='medium-font orange-color'>Accessible &nbsp; </p>{' '}
+							{'  '}
+							<p className='medium-font'> on leading</p>
+						</div>
+						<p className='medium-font'>blockchains</p>
+						<div className='d-flex justify-content-between align-items-center'>
+							<p className='caption-content'>
+								No matter which one you prefer, we are accessible on top leading
+								blockchains
+							</p>
+							<p className='caption-content orange-color pointer'>
+								+ More coming soon
+							</p>
+						</div>
+
+						<div className='d-flex justify-content-between align-items-center px-5 py-5'>
+							<img
+								src={require('../../assets/images/home-ethereum.svg')}
+								alt=''
+							/>
+							<img
+								src={require('../../assets/images/home-binance.svg')}
+								alt=''
+							/>
+							<img src={require('../../assets/images/home-m.svg')} alt='' />
+						</div>
+						<div className='d-flex justify-content-between align-items-center px-5 py-5'>
+							<img
+								src={require('../../assets/images/home-cardano.svg')}
+								alt=''
+							/>
+							<img src={require('../../assets/images/home-par.svg')} alt='' />
+							<img src={require('../../assets/images/home-huobi.svg')} alt='' />
+						</div>
+					</div>
+				</div>
+			</div>
+
+			{/* Believe card */}
+			<div className='believe-part'>
+				<div className='d-flex justify-content-center align-items-center py-5'>
+					<p className='medium-font'>We &nbsp;</p>
+					<p className='medium-font orange-color'>Believe in</p>
+				</div>
+				<div className='d-flex justify-content-between align-items-center px-5'>
+					<div className='believe-card text-center'>
+						<img src={require('../../assets/images/home-bel-1.svg')} alt='' />
+						<p className='caption-content-medium py-2'>Security</p>
+						<p className='caption-content'>
+							USDAO is backed by the pool of cryptocurrencies. ASSET token fund
+							the pool and maintains the stability of USDAO's price
+						</p>
+					</div>
+					<div className='believe-card text-center'>
+						<img src={require('../../assets/images/home-bel-2.svg')} alt='' />
+						<p className='caption-content-medium py-2'>Security</p>
+						<p className='caption-content'>
+							USDAO uses strong cryptographic techniques which makes it more
+							secure over the public blockchain
+						</p>
+					</div>
+					<div className='believe-card text-center'>
+						<img src={require('../../assets/images/home-bel-3.svg')} alt='' />
+						<p className='caption-content-medium py-2'>Security</p>
+						<p className='caption-content'>
+							USDAO is a fully community-driven decentralized protocol deployed
+							on Ethereum, Polkadot, Binance Smart -Chain, Cardano, & more
+						</p>
+					</div>
+				</div>
+			</div>
+
+			{/* network card part */}
+			<div className='network-area'>
+				<div className='row px-5'>
+					<div className='col-md-4 my-auto'>
+						<p className='medium-font'>TWO TOKENS</p>
+						<p className='medium-font'>POWER</p>
+						<p className='medium-font orange-color'>THE NETWORK</p>
+					</div>
+					<div className='col-md-4 text-right m-auto'>
+						<div className='network-card text-center'>
+							<div className='d-flex align-items-center justify-content-center'>
+								<img
+									src={require('../../assets/images/home-card-asset.svg')}
+									alt=''
+								/>
+								<div className='medium-font'>ASSET</div>
+							</div>
+							<p className='caption-content py-4'>
+								A stablecoin whose price is relatively pegged to 1 US Dollar. It
+								can be minted using Ether or any other ERC20 tokens.
+							</p>
+							<button className='linear-button'>Start Investing</button>
+						</div>
+					</div>
+					<div className='col-md-4 text-right'>
+						<div className='network-card text-center'>
+							<div className='d-flex align-items-center justify-content-center'>
+								<img
+									src={require('../../assets/images/home-card-asset.svg')}
+									alt=''
+								/>
+								<div className='medium-font'>ASSET</div>
+							</div>
+							<p className='caption-content py-4'>
+								A stablecoin whose price is relatively pegged to 1 US Dollar. It
+								can be minted using Ether or any other ERC20 tokens.
+							</p>
+							<button className='linear-button'>Start Investing</button>
+						</div>
+						<div className='network-card text-center'>
+							<div className='d-flex align-items-center justify-content-center'>
+								<img
+									src={require('../../assets/images/home-card-asset.svg')}
+									alt=''
+								/>
+								<div className='medium-font'>ASSET</div>
+							</div>
+							<p className='caption-content py-4'>
+								A stablecoin whose price is relatively pegged to 1 US Dollar. It
+								can be minted using Ether or any other ERC20 tokens.
+							</p>
+							<button className='linear-button'>Start Investing</button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			{/* stake on usdao starts */}
+			{/* stake on usdao pending */}
+			{/* stake on usdao ends */}
+
+			{/* explore use cases */}
+			<div className='believe-part'>
+				<div className='d-flex justify-content-center align-items-center py-5'>
+					<p className='medium-font'>Explore &nbsp;</p>
+					<p className='medium-font orange-color'>Use Cases</p>
+				</div>
+				<div className='d-flex justify-content-between align-items-center px-5'>
+					<div className='believe-card text-center'>
+						<img src={require('../../assets/images/home-bel-1.svg')} alt='' />
+						<p className='caption-content-medium py-2'>Powerstake</p>
+						<p className='caption-content'>
+							A new age staking model with with USDAO stablecoin, where users
+							can earn from 40% to 180% interest in native usecase token
+							launched by USDAO ecosystem platforms.
+						</p>
+					</div>
+					<div className='believe-card text-center'>
+						<img src={require('../../assets/images/home-bel-2.svg')} alt='' />
+						<p className='caption-content-medium py-2'>Remittance</p>
+						<p className='caption-content'>
+							Send money, Anytime , Anywhere for Any cause with complete
+							tracking through USDAO.
+						</p>
+					</div>
+					<div className='believe-card text-center'>
+						<img src={require('../../assets/images/home-bel-3.svg')} alt='' />
+						<p className='caption-content-medium py-2'>NFT</p>
+						<p className='caption-content'>
+							We see a huge potential in the economics involved in the gaming
+							industry. The concept of tokens and payments have existed even
+							before the advent of stablecoins
+						</p>
+					</div>
+				</div>
+			</div>
+
+			{/* Waiting for section */}
+			<div className='waiting-area'>
+				<div className='row px-5'>
+					<div className='col-md-6 m-auto'>
+						<div className='medium-font'>WHAT ARE YOU WAITING FOR?</div>
+						<p className='caption-content py-4'>
+							There’s no need to create an account! Just connect your web 3.0
+							wallet and get USDAO
+						</p>
+						<button className='linear-button' style={{ margin: '0' }}>
+							CONNECT WALLET
+						</button>
+						<p className='caption-content orange-color pt-4'>Coming Soon!</p>
+					</div>
+					<div className='col-md-6 text-right'>
+						<img
+							src={require('../../assets/images/home-waiting.svg')}
+							alt=''
+							style={{ minHeight: '25rem' }}
+						/>
+					</div>
+				</div>
+			</div>

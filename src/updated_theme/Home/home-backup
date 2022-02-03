@@ -1,0 +1,361 @@
+
+			{/* Division 3 starts */}
+			<div className='division-3'>
+				<div className='row px-5'>
+					<div className='col-md-6 m-auto'>
+						<p className='big-font-1 orange-color'>WHY USDAO</p>
+						<p className='big-font-1'>SPEED, SCALABLE, SECURED</p>
+						<p className='caption-content'>
+							The USDAO Protocol provides a highly scalable and decentralized
+							stable currency with lower transaction fees. USDAO is a
+							crypto-backed digital stablecoin intended to serve as a global
+							currency.
+						</p>
+					</div>
+					<div className='col-md-6 text-center'>
+						<img
+							src={require('../../assets/images/home-big-image.svg')}
+							style={{ width: '70%' }}
+							alt=''
+						/>
+					</div>
+				</div>
+			</div>
+			{/* Division 3 ends */}
+
+			{/* Divison 4 starts */}
+			<div className='division-4'>
+				<div className='row px-5'>
+					<div className='col accesible-card'>
+						<div className='d-flex'>
+							<p className='medium-font orange-color'>Accessible &nbsp; </p>{' '}
+							{'  '}
+							<p className='medium-font'> on leading blockchains</p>
+						</div>
+						<div className='d-flex justify-content-between align-items-center'>
+							<p className='caption-content'>
+								No matter which one you prefer, we are accessible on top leading
+								blockchains
+							</p>
+							<p className='caption-content orange-color pointer'>
+								+ More coming soon
+							</p>
+						</div>
+
+						<div className='d-flex justify-content-between align-items-center px-5 py-5'>
+							<img
+								src={require('../../assets/images/home-ethereum.svg')}
+								alt=''
+							/>
+							<img
+								src={require('../../assets/images/home-binance.svg')}
+								alt=''
+							/>
+							<img src={require('../../assets/images/home-m.svg')} alt='' />
+						</div>
+						<div className='d-flex justify-content-between align-items-center px-5 py-5'>
+							<img
+								src={require('../../assets/images/home-cardano.svg')}
+								alt=''
+							/>
+							<img src={require('../../assets/images/home-par.svg')} alt='' />
+							<img src={require('../../assets/images/home-huobi.svg')} alt='' />
+						</div>
+					</div>
+				</div>
+			</div>
+
+			{/* Believe card */}
+			<div className='believe-part text-center'>
+				<div className='py-5 d-flex justify-content-center'>
+					<p className='medium-font'>We &nbsp;</p>
+					<p className='medium-font orange-color'>Believe in</p>
+				</div>
+				<div className='row px-5'>
+					{/* d-flex justify-content-between align-items-center */}
+					<div className='col-md-4 d-flex justify-content-center align-'>
+						<div className='believe-card text-center'>
+							<img src={require('../../assets/images/home-bel-1.svg')} alt='' />
+							<p className='caption-content-medium py-2'>Security</p>
+							<p className='caption-content'>
+								USDAO is backed by the pool of cryptocurrencies. ASSET token
+								fund the pool and maintains the stability of USDAO's price
+							</p>
+						</div>
+					</div>
+					<div className='col-md-4 d-flex justify-content-center align-'>
+						<div className='believe-card text-center'>
+							<img src={require('../../assets/images/home-bel-2.svg')} alt='' />
+							<p className='caption-content-medium py-2'>Security</p>
+							<p className='caption-content'>
+								USDAO uses strong cryptographic techniques which makes it more
+								secure over the public blockchain
+							</p>
+						</div>
+					</div>
+					<div className='col-md-4 d-flex justify-content-center align-'>
+						<div className='believe-card text-center'>
+							<img src={require('../../assets/images/home-bel-3.svg')} alt='' />
+							<p className='caption-content-medium py-2'>Security</p>
+							<p className='caption-content'>
+								USDAO is a fully community-driven decentralized protocol
+								deployed on Ethereum, Polkadot, Binance Smart -Chain, Cardano, &
+								more
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			{/* network card part */}
+			<div className='network-area'>
+				<div className='row px-5'>
+					<div className='col-md-4 my-auto'>
+						<p className='medium-font'>TWO TOKENS</p>
+						<p className='medium-font'>POWER</p>
+						<p className='medium-font orange-color'>THE NETWORK</p>
+					</div>
+					<div className='col-md-4 text-right m-auto'>
+						<div className='network-card text-center'>
+							<div className=' justify-content-center'>
+								<img
+									src={require('../../assets/images/home-card-usdao.svg')}
+									alt=''
+								/>
+								<div className='medium-font'>USDAO</div>
+							</div>
+							<p className='caption-content py-4'>
+								A stablecoin whose price is relatively pegged to 1 US Dollar. It
+								can be minted using Ether or any other ERC20 tokens.
+							</p>
+							<button className='linear-button'>Start Investing</button>
+						</div>
+					</div>
+					<div className='col-md-4 text-right'>
+						<div className='network-card text-center'>
+							<div className=' justify-content-center'>
+								<img
+									src={require('../../assets/images/home-card-gov.svg')}
+									alt=''
+								/>
+								<div className='medium-font'>DAOGov</div>
+							</div>
+							<p className='caption-content py-4'>
+								A stablecoin whose price is relatively pegged to 1 US Dollar. It
+								can be minted using Ether or any other ERC20 tokens.
+							</p>
+							<button className='linear-button'>Start Investing</button>
+						</div>
+						<div className='network-card text-center'>
+							<div className=' justify-content-center'>
+								<img
+									src={require('../../assets/images/home-card-asset.svg')}
+									alt=''
+								/>
+								<div className='medium-font'>ASSET</div>
+							</div>
+							<p className='caption-content py-4'>
+								A stablecoin whose price is relatively pegged to 1 US Dollar. It
+								can be minted using Ether or any other ERC20 tokens.
+							</p>
+							<button className='linear-button'>Start Investing</button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			{/* stake on usdao starts */}
+			<div className='row stake-content'>
+				<div className='col-md-6 text-left m-auto px-5'>
+					<div className='medium-font'>Stake ON USDAO</div>
+					<p className='caption-content'>
+						Earn rewards by staking your USDAO to help securethe network. Choose
+						your staking preference, startearning with a few clicks, and use
+						your staked fundsas collateral on USDAO.
+					</p>
+
+					<button className='linear-button-x mt-4'>Stake Now</button>
+				</div>
+				<div className='col-md-6 px-5'>
+					<div className='shadow-card-1'>
+						<p className='caption-content-prop'>Estimate Your Reward</p>
+
+						<div className='slider-content my-4'>
+							<p className='label-content py-2'>
+								You Stake {stakingValue} USDAO
+							</p>
+
+							<Slider
+								defaultValue={1000000}
+								min={1000}
+								max={10000000}
+								marks={marks}
+								onChange={setStakingValue}
+							/>
+						</div>
+
+						<div className='slider-content my-4'>
+							<p className='label-content py-2'>Locking it for {days} days</p>
+
+							<Slider
+								defaultValue={68}
+								min={1}
+								max={365}
+								marks={dayMarks}
+								onChange={setDays}
+							/>
+						</div>
+					</div>
+					<div className='linear-button-x estimated-div'>
+						<div className='d-flex justify-content-between'>
+							<div>
+								<p className='caption-conten'>Your Estimated Reward</p>
+								<p className='caption-content-prop'>11,593 USDAO</p>
+							</div>
+
+							<div>
+								<p className='caption-content'>Fixed APR</p>
+								<p className='caption-content-prop'>10.93%</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			{/* stake on usdao ends */}
+
+			{/* explore use cases */}
+			<div className='believe-part'>
+				<div className=' py-5 d-flex justify-content-center align-items-center'>
+					<p className='medium-font'>Explore &nbsp;</p>
+					<p className='medium-font orange-color'>Use Cases</p>
+				</div>
+				<div className='row px-5'>
+					{/* d-flex justify-content-between align-items-center */}
+					<div className='col-md-4 d-flex justify-content-center align-items-center'>
+						<div className='believe-card text-center'>
+							<img src={require('../../assets/images/home-bel-1.svg')} alt='' />
+							<p className='caption-content-medium py-2'>Powerstake</p>
+							<p className='caption-content'>
+								A new age staking model with with USDAO stablecoin, where users
+								can earn from 40% to 180% interest in native usecase token
+								launched by USDAO ecosystem platforms.
+							</p>
+						</div>
+					</div>
+					<div className='col-md-4 d-flex justify-content-center align-items-center'>
+						<div className='believe-card text-center'>
+							<img src={require('../../assets/images/home-bel-2.svg')} alt='' />
+							<p className='caption-content-medium py-2'>Remittance</p>
+							<p className='caption-content'>
+								Send money, Anytime , Anywhere for Any cause with complete
+								tracking through USDAO.
+							</p>
+						</div>
+					</div>
+					<div className='col-md-4 d-flex justify-content-center align-items-center'>
+						<div className='believe-card text-center'>
+							<img src={require('../../assets/images/home-bel-3.svg')} alt='' />
+							<p className='caption-content-medium py-2'>NFT</p>
+							<p className='caption-content'>
+								We see a huge potential in the economics involved in the gaming
+								industry. The concept of tokens and payments have existed even
+								before the advent of stablecoins
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			{/* Waiting for section */}
+			<div className='waiting-area'>
+				<div className='row px-5'>
+					<div className='col-md-6 m-auto'>
+						<div className='medium-font'>WHAT ARE YOU WAITING FOR?</div>
+						<p className='caption-content py-4'>
+							There’s no need to create an account! Just connect your web 3.0
+							wallet and get USDAO
+						</p>
+						<button className='linear-button' style={{ margin: '0' }}>
+							CONNECT WALLET
+						</button>
+						<p className='caption-content orange-color pt-4 pointer'>
+							Coming Soon!
+						</p>
+					</div>
+					<div className='col-md-6 text-right'>
+						<img
+							src={require('../../assets/images/home-waiting.svg')}
+							alt=''
+							style={{ minHeight: '25rem' }}
+						/>
+					</div>
+				</div>
+			</div>
+
+			{/* Open source comm div */}
+			<div className='open-source'>
+				<div className=' d-flex align-items-center justify-content-center px-5'>
+					<p className='medium-font orange-color'>Join global &nbsp;</p>
+					<p className='medium-font'>open source community</p>
+				</div>
+				<div className='row px-5 pt-5'>
+					<div className='col-md-3 d-flex justify-content-center'>
+						<div className='image-card'>
+							<img
+								src={require('../../assets/images/home-telegram.svg')}
+								alt=''
+							/>
+						</div>
+					</div>
+					<div className='col-md-3 d-flex justify-content-center'>
+						<div className='image-card'>
+							<img
+								src={require('../../assets/images/home-discord.svg')}
+								alt=''
+							/>
+						</div>
+					</div>
+					<div className='col-md-3 d-flex justify-content-center'>
+						<div className='image-card'>
+							<img
+								src={require('../../assets/images/home-github.svg')}
+								alt=''
+							/>
+						</div>
+					</div>
+					<div className='col-md-3 d-flex justify-content-center'>
+						<div className='image-card'>
+							<img
+								src={require('../../assets/images/home-reddit.svg')}
+								alt=''
+							/>
+						</div>
+					</div>
+					<div className='col-md-3 d-flex justify-content-center pt-5'>
+						<div className='image-card'>
+							<img
+								src={require('../../assets/images/home-twitter.svg')}
+								alt=''
+							/>
+						</div>
+					</div>
+					<div className='col-md-3 d-flex justify-content-center pt-5'>
+						<div className='image-card'>
+							<img src={require('../../assets/images/home-fb.svg')} alt='' />
+						</div>
+					</div>
+					<div className='col-md-3 d-flex justify-content-center pt-5'>
+						<div className='image-card'>
+							<img src={require('../../assets/images/home-in.svg')} alt='' />
+						</div>
+					</div>
+					<div className='col-md-3 d-flex justify-content-center pt-5'>
+						<div className='image-card text-center'>
+							<img
+								src={require('../../assets/images/home-medium.svg')}
+								alt=''
+							/>
+						</div>
+					</div>
+				</div>
+			</div>

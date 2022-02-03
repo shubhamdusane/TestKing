@@ -1,0 +1,306 @@
+target: '',
+		value: '',
+		signature: '',
+		callDataArray: []
+	}
+
+	const emptyCallData = { calldata: '', eth_price: '' }
+
+<div className='form-group'>
+{fields.map((field, idx) => {
+    return (
+        <div className='row mt-5' key={`${field}-${idx}`}>
+            <label>Create A Proposal</label>
+            <div className='col-12 p-0'>
+                <div className='contact__input'>
+                    <input
+                        type='text'
+                        className='form-control'
+                        name='target'
+                        onChange={(e) => handleChange2(idx, e, 'target')}
+                        placeholder='Targeted Contract address'
+                        value={fields[idx].target}
+                    />
+                </div>
+                <p style={{ color: 'red' }}>
+                    {formvalidationerror.target}
+                </p>
+            </div>
+
+            <div className='col-12 p-0'>
+                <label>Enter Amount in Ether</label>
+
+                <div className='contact__input'>
+                    <input
+                        type='number'
+                        className='form-control'
+                        name='value'
+                        onChange={(e) => handleChange2(idx, e, 'value')}
+                        placeholder='Value in Ethers'
+                        value={fields[idx].value}
+                    />
+                </div>
+                <p style={{ color: 'red' }}>
+                    {formvalidationerror.value}
+                </p>
+            </div>
+            <label>Signature</label>
+            <div className='col-12 p-0 contact__input singnature_wrap'>
+                <select
+                    className='form-control'
+                    onChange={(e) => handleChange2(idx, e, 'signature')}
+                    defaultValue='signature'
+                    style={{ height: 'fit-content' }}
+                >
+                    <option value='signature'>Signature</option>
+                    {singnatureFunction.map((v, i) => (
+                        <option key={i} value={v}>
+                            {v}
+                        </option>
+                    ))}
+                </select>
+                {/* <div className="contact__input">
+                <input type="text" className="form-control" name="f_signature" placeholder="Signature" onChange={(e) => handleChange2(idx, e, 'signature')} value={fields[idx].signature} />
+            </div> */}
+                <p style={{ color: 'red' }}>
+                    {formvalidationerror.signature}
+                </p>
+
+                {fields[idx].signature === 'undefined' ? (
+                    <p style={{ color: 'red' }}>
+                        Please Enter Target Value
+                    </p>
+                ) : (
+                    <p></p>
+                )}
+            </div>
+            {fields[idx].callDataArray &&
+                fields[idx].callDataArray.length > 0 &&
+                fields[idx].callDataArray.map((field, id) => {
+                    return (
+                        <div
+                            className={
+                                'col-12 p-0 mt-2' +
+                                (id > 0 ? ' call-data-top' : ' ')
+                            }
+                            key={id}
+                        >
+                            <label>Call Data</label>
+                            <div class='input-group mb-3 d-flex'>
+                                <div className='col-12 col-md-6 contact__input mb-auto p-0'>
+                                    <select
+                                        class='form-control'
+                                        id='inputGroupSelect02'
+                                        onChange={(e) =>
+                                            handleChange3(idx, id, e, 'calldata')
+                                        }
+                                        value={fields[idx].callDataArray[id].calldata}
+                                    >
+                                        <option selected>Choose Call Data</option>
+                                        {options &&
+                                            options.map((v, i) => (
+                                                <option key={i} value={v}>
+                                                    {v}
+                                                </option>
+                                            ))}
+                                    </select>
+                                </div>
+
+                                <div className='flex-1 input__border'>
+                                    <div className='contact__input'>
+                                        <input
+                                            type='text'
+                                            className='form-control '
+                                            name='calldata'
+                                            placeholder='Calldata'
+                                            value={fields[idx].callDataArray[id]['eth_price'] ? fields[idx].callDataArray[id]['eth_price'] : ''}
+                                            onChange={(e) => {
+                                                // callDataArray[i][name] = e.target.value
+                                                handleChange3(idx, id, e, 'eth_price')
+                                            }}
+                                        />
+                                    </div>
+                                    <p style={{ color: 'red' }}>
+                                        {formvalidationerror.eth_price}
+                                    </p>
+                                </div>
+                            </div>
+                            {/* <div className="col-12 mt-3 text-right">
+                        <a className="btn btn-primary btn-round text-white navbar__button1" onClick={() => handleRemoveCallData(idx, id)}>Remove</a>
+                    </div> */}
+                        </div>
+                    )
+                })}
+            <div className='col-12 p-0 mt-3 pb-3 call_data_buttons'>
+                <a
+                    className='btn btn-primary btn-round text-white navbar__button1'
+                    onClick={() => handleAddCallData(idx)}
+                >
+                    Add Call Data
+                </a>
+                <a
+                    className='btn btn-primary btn-round text-white navbar__button1 ml-2'
+                    onClick={() => handleRemoveCallData(idx)}
+                >
+                    Remove Call Data
+                </a>
+            </div>
+            {/* <div className="col-12 mt-3 text-right">
+            <a className="btn btn-primary btn-round text-white navbar__button1" onClick={() => handleRemove(idx)}>Remove</a>
+        </div> */}
+            <div className='col-12 p-0 mt-3 pb-3 Proposal_buttons'>
+                <a
+                    className='btn btn-primary btn-round text-white navbar__button1'
+                    onClick={() => handleAdd()}
+                >
+                    Add Another Proposal
+                </a>
+                <a
+                    className='btn btn-primary btn-round text-white navbar__button1 ml-2'
+                    onClick={() => handleRemove(idx)}
+                >
+                    Remove Current Proposal
+                </a>
+            </div>
+        </div>
+    )
+})}
+
+<div className='row mt-3'>
+    <div className='col-12 contact__input p-0'>
+        <input
+            type='text'
+            className='form-control'
+            name='description'
+            onChange={(e) => setDescription(e.target.value)}
+            placeholder='Description'
+            value={description}
+        />
+    </div>
+    {description.length > 50 ? (
+        <p style={{ color: 'red' }}>
+            Description should not be greater than 50 characters
+        </p>
+    ) : (
+        <p></p>
+    )}
+</div>
+<div className='row mt-3'>
+    <a
+        className={cn(
+            'btn btn-primary btn-round text-white navbar__button1',
+            disabled && 'disabled'
+        )}
+        onClick={() => handleSubmit()}
+    >
+        Create Proposal
+    </a>
+</div>
+</div>
+
+
+	const checkCallData = () => {
+		const signatureValidation = [
+			{ name: 'changeMintFee(uint8,uint32)', inputs: ['uint8', 'uint32'] },
+			{ name: 'changeBurnFee(uint8,uint32)', inputs: ['uint8', 'uint32'] },
+			{ name: 'changeDefundFee(uint8,uint32)', inputs: ['uint8', 'uint32'] },
+			{ name: 'changeTransferFee(uint8,uint32)', inputs: ['uint8', 'uint32'] },
+			{
+				name: 'changeTransactionTax(uint8,uint32)',
+				inputs: ['uint8', 'uint32']
+			},
+			{ name: 'govFundPool()', inputs: [] },
+			{ name: 'govDefundPool(uint256)', inputs: ['uint256'] }
+		]
+		console.log(fields, 'check this value !')
+		for (const field of fields) {
+			const callDatas = field.callDataArray
+			const signature = field.signature
+			const inputs = signatureValidation.find(
+				(s) => s.name === signature
+			)?.inputs
+			console.log(inputs, 'this inputs', signature)
+			if (inputs) {
+				let str = ''
+				for (const inp of inputs) {
+					str += `${inp},`
+				}
+				if (inputs.length !== callDatas.length) {
+					swal(`Calldata inputs not correct. Need : ${str}`)
+					throw new Error('Calldata inputs not correct !')
+				}
+				for (const i of inputs) {
+					const exist = callDatas.find((c) => c.calldata === i)
+					if (!exist) {
+						swal(`Calldata inputs not correct. Need : ${str}`)
+						throw new Error('Calldata inputs not correct')
+					}
+				}
+			} else {
+				throw new Error('Values not valid !')
+			}
+		}
+	}
+
+
+
+	const handleSubmit = async () => {
+		try {
+			checkCallData()
+			const userAddress = await getCurrentuserAddress
+			const { delegates } = compContract
+			const delegatesDetails = await delegates(userAddress)
+			if (delegatesDetails !== '0x0000000000000000000000000000000000000000') {
+				if (fields) {
+					if (
+						fields[0].target === '' ||
+						fields[0].value === '' ||
+						fields[0].signature === '' ||
+						fields[0].calldata === '' ||
+						fields[0].eth_price === ''
+					) {
+						return swal(`Please enter data`)
+					}
+
+					let targets = []
+					let values = []
+					let signatures = []
+					let calldatas = null
+					let param_types = []
+					let param_vals = []
+					fields.map((v) => {
+						targets.push(v.target)
+						values.push(ethers.utils.parseEther(String(v.value)))
+						signatures.push(v.signature)
+
+						v.callDataArray.map((c) => {
+							param_types.push(c.calldata)
+							param_vals.push(c.eth_price)
+						})
+					})
+					calldatas = [encodeParameters(param_types, param_vals)]
+					//return;
+					const response = await createProposal(
+						dispatch,
+						targets,
+						values,
+						signatures,
+						calldatas,
+						description,
+						governorAlpha,
+						govAlphaContract,
+						setDisabled
+					)
+					if (response) {
+						console.log(response, 'create proposal response')
+
+						refreshSingleContract(0, true)
+					}
+				}
+			} else {
+				swal(`Please delegate this address before creating proposal`)
+			}
+		} catch (error) {
+			console.log(error, 'Error in submitting form !')
+		}
+	}

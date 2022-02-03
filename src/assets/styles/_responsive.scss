@@ -1,0 +1,324 @@
+
+@media (max-width: 991px) {
+  .navbar {
+    .navbar-brand-wrapper {
+      .brand-logo {
+        display: none;
+      }
+      .brand-logo-mini {
+        display: inline-block;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 991px){
+.sidebar-offcanvas-home.active {
+    background-color: #2D218B !important;
+}
+.sidebar-offcanvas-home.active {
+  top: 60px !important;
+}
+}
+
+@media screen and (max-width: 991px) {
+  .row-offcanvas {
+    position: relative;
+    -webkit-transition: all .25s ease-out;
+    -o-transition: all .25s ease-out;
+    transition: all .25s ease-out;
+
+    &.row-offcanvas-right {
+      right: 0;
+
+      .sidebar-offcanvas, .sidebar-offcanvas-home {
+        right: -100%; // 12 columns
+      }
+
+      &.active {
+        right: calc(50% + 30px); // 6 columns
+        
+
+        .sidebar-offcanvas, .sidebar-offcanvas-home {
+          right: calc(-50% - 15px); // 6 columns
+          
+        }
+      }
+    }
+
+    &.row-offcanvas-left {
+      left: 0;
+
+      .sidebar-offcanvas, .sidebar-offcanvas-home {
+        left: -100%; // 12 columns
+      }
+
+      &.active {
+        left: 50%; // 6 columns
+
+        .sidebar-offcanvas, .sidebar-offcanvas-home {
+          left: -50%; // 6 columns
+        }
+      }
+    }
+
+    .sidebar-offcanvas, .sidebar-offcanvas-home {
+      position: absolute;
+      top: 0;
+      width: calc( 50% + 30px); // 6 columns
+    }
+  }
+
+  .side-nav-bar-container {
+    .sidebar-offcanvas-home{
+      // margin-top: 25px;
+      width: 100%;
+      left: 0;
+      // top: 86px;
+      background-color: #fff !important;
+      button{
+        height: max-content;
+        padding: 10px;
+        margin: 10px auto;
+        position: inherit !important;
+      }
+    }
+    .card-c{
+      .navbar-toggler{
+        position: absolute;
+        right: 0;
+      }
+    }
+    
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .side-nav-bar-container {
+    .gov-header{
+      ul{
+        li:nth-child(1){
+          display: none;
+        }
+      }
+    }
+    .governance_navbar{
+      ul{
+        .kovam-btn{
+          button{
+            color: black !important;
+            background-color: transparent;
+            border: 2px solid black !important;
+          } 
+        }
+      }
+    }
+    .card-c{
+      .card-content-wrap{
+        width: 100% !important;
+        .img-wrapper{
+          img{
+            // height: 250px;
+            border-radius: 20px;
+
+          }
+          .img-content{
+            h1{
+              font-size: 30px;
+            }
+          }
+        }
+        .proposal-wrapper{
+          .proposal-header{
+            display: block !important;
+            max-height: 200px;
+            height: 100px;
+            h2{
+              white-space: nowrap;
+            }
+            button{
+              height: max-content;
+              padding: 10px;
+              margin: 10px auto;
+              position: inherit !important;
+            }
+          }
+        }
+      }
+    }
+  }
+  .admin-dash{
+    button{
+      margin-bottom: 2rem;
+      width: 100% !important;
+    }
+  }
+}
+
+@media screen and (min-width: 700px){
+  .side-nav-bar-container {
+    .governance_navbar{
+      ul{
+        li:nth-child(1){
+          display: none;
+        }
+      }
+    }
+    .card-c{
+      .card-content-wrap{
+        .proposal-wrapper{
+          .card-wrap{
+            .row{
+              .status-btn{
+                margin: 10px auto;
+              }
+            }
+          }
+        }
+      }
+    }
+  }  
+}
+
+@media screen and (max-width: 320px) {
+  .side-nav-bar-container {
+    .card-c{
+      .card-content-wrap{
+        // width: 100% !important;
+        .img-wrapper{
+          img{
+            height: 300px !important;
+          }
+        }
+        .img-content{
+          margin: 1rem 0 0 1rem !important;
+        }
+      }
+    }
+  }
+  .gov-header{
+    ul{
+      li{
+        padding-left: 0 !important;
+      }
+    }
+  }
+}
+
+@media screen and (max-width:1200px){
+  .side-nav-bar-container {
+    .card-c{
+      .card-content-wrap{
+        .img-wrapper{
+          img{
+            height: 200px;
+            border-radius: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .staking_main{
+    .stakeConatiner{
+      .Stake_card{
+        width: 100%;
+        margin-right: 0;
+      }
+      .reward-estimate{
+        margin-top: 2rem;
+        width: 100% !important;
+      }
+    }
+  }
+}
+
+@media screen and (max-width : 991px) {
+  .side-nav-bar-container {
+    .layout_headermain{
+      height: $navbar-height;
+      .home__navbar_logo1{
+        background: var(--backgroundColor) !important;
+      }
+    }
+  }
+  .indiaEdition{
+    img{
+      margin-left: 3rem !important;
+    }
+  }
+ 
+  .side-nav-bar-container {
+    .governance_navbar:not(.activeSideBar){
+      width: 0% !important;
+    }
+    .activeSideBar{
+      width: 100% !important;
+      top: 0;
+      ul{
+        width: 100% !important;
+      }
+    }
+    .card-c:not(.activeSide-bar-container){
+      position: absolute;
+      top: 0;
+    }
+  }
+  .staking_main{
+    .stakeConatiner{
+      margin-left: 0 !important;
+      margin-right: 0 !important;
+    }
+    .staking_main_top{
+      .staking_main_top_left, .staking_main_top_mid, .staking_main_top_right{
+        width: 100%;
+        max-width: 100%;
+        flex: 0 0 100%;
+      }
+      .staking_main_top_mid{
+        margin: 0 !important;
+        border-radius: 0px !important;
+      }
+      .staking_main_top_left{
+        border-radius: 10px 10px 0px 0px !important;
+      }
+      .staking_main_top_right{
+        border-radius: 0px 0px 10px 10px !important;
+      }
+    }
+  }
+  .hackathon-c{
+    .main-section{
+      .reason-join{
+        h1{
+          padding: 4rem 0 !important;
+        }
+      }
+      .prize-a{
+        .amount{
+          font-size: 5rem !important;
+        }
+      }
+    }
+  }
+} 
+
+@media screen and (min-width : 991px){
+  .card-c{
+    .mobile-display{
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width : 576px){
+  .hackathon-c{
+    .main-section{
+      h2{
+        font-size: 2rem !important;
+      }
+    }
+  }
+}
